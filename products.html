@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Logtadds Shopping Page</title>
+<meta charset="UTF-8">
+<meta name="description" content="Shopping cart page">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
+<link rel="stylesheet" href="./assets/css/project.css" >
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<body class="w3-content" style="max-width:1200px">
+  
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-bar-block w3-white w3-collapse w3-top" style="z-index:3;width:250px" id="mySidebar">
+  <div class="w3-container w3-display-container w3-padding-16">
+    <em onclick="w3_close()" class="fa fa-remove w3-hide-large w3-button w3-display-topright"></em>
+    <a href="/index.html"><img class="logo11" alt="#" src="./images/logo11.jpeg" style="font-size:2.5em"></a>
+  </div>
+  <div class="w3-padding-64 w3-large w3-text-grey" style="font-weight:bold">
+    <a onclick="myAccFunc()" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align" id="myBtn">
+      Jeans <em class="fa fa-caret-down"></em>
+    </a>
+    <div id="demoAcc" class="w3-bar-block w3-hide w3-padding-large w3-medium">
+      <a href="#" class="w3-bar-item w3-button w3-light-grey"><em class="fa fa-caret-right w3-margin-right"></em>Fitted</a>
+    </div>
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-bar w3-top w3-hide-large w3-black w3-xlarge">
+  <div class="w3-bar-item w3-padding-24 w3-wide"><img class="logo11" alt="#" src="./images/logo11.jpeg" style="font-size:1em"></div>
+  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding-24 w3-right" onclick="w3_open()"><em class="fa fa-bars"></em></a>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:250px">
+
+  <!-- Push down content on small screens -->
+  <div class="w3-hide-large" style="margin-top:83px"></div>
+  
+  <!-- Top header -->
+  <header class="w3-container w3-xlarge">
+    <p class="w3-left">Jeans</p>
+  </header>
+
+  <!-- Image header -->
+  <div class="w3-display-container w3-container">
+    <img src="./images/man-wearing-denim-jeans-1804075.jpg" alt="Jeans" style="width:100%">
+    <div class="w3-display-topleft w3-text-white" style="padding:24px 48px">
+      <h1 class="w3-jumbo w3-hide-small">New arrivals</h1>
+      <h1 class="w3-hide-large w3-hide-medium">New arrivals</h1>
+      <h1 class="w3-hide-small">COLLECTION 2016</h1>
+      <p><a href="#jeans" class="w3-button w3-black w3-padding-large w3-large">SHOP NOW</a></p>
+    </div>
+  </div>
+
+  <div class="w3-container w3-text-grey" id="jeans">
+    <p>8 items</p>
+  </div>
+
+  <!-- Product grid -->
+  <div class="w3-row w3-grayscale">
+    <div class="w3-col l3 s6">
+      <div class="w3-container">
+        <div class="w3-display-container">
+          <img src="./images/boots-cardigan-denim-fashion-6710.jpg" alt="denim-fashion" style="width:100%">
+          <div class="w3-display-middle w3-display-hover">
+            <button style="cursor: pointer;" onclick="document.location = 'http://ww9.aitsafe.com/cf/add.cfm?product=Ripped+Skinny+Jeans&price=24.99&userid=B8270502'">
+              Buy now  <em class="fa fa-shopping-cart"></em> 
+            </button>
+          </div>
+        </div>
+        <p>Ripped Skinny Jeans<br><em>$24.99</em></p>
+      </div>
+      <div class="w3-container">
+        <div class="w3-display-container">
+          <img src="./images/man-in-gray-denim-jacket-leaning-on-woman-3254131.jpg" alt="denim-jacket" style="width:100%">
+          <span class="w3-tag w3-display-topleft">New</span>
+          <div class="w3-display-middle w3-display-hover">
+            <button style="cursor: pointer;" onclick="document.location = 'https://ww9.aitsafe.com/cf/add.cfm?product=Trendy+Jeans&price=19.99&userid=B8270502'">
+              Buy now  <em class="fa fa-shopping-cart"></em> 
+            </button>
+          </div>
+        </div>
+        <p>Trendy Jeans<br><em>$19.99</em></p>
+      </div>
+    </div>
+
+    <div class="w3-col l3 s6">
+      <div class="w3-container">
+        <div class="w3-display-container">
+          <img src="./images/person-wearing-distressed-denim-jeans-2225142.jpg" alt="denim-jean" style="width:100%">
+          <span class="w3-tag w3-display-topleft">New</span>
+          <div class="w3-display-middle w3-display-hover">
+            <button style="cursor: pointer;" onclick="document.location = 'https://ww9.aitsafe.com/cf/add.cfm?product=Mega+Ripped+Jeans&price=29.99&userid=B8270502'">
+              Buy now  <em class="fa fa-shopping-cart"></em> 
+            </button>
+          </div>
+        </div>
+        <p>Mega Ripped Jeans<br><em>$29.99</em></p>
+      </div>
+      <div class="w3-container">
+        <div class="w3-display-container">
+          <img src="./images/photo-of-person-wearing-white-t-shirt-and-blue-denim-jeans-4066290.jpg" alt="blue-denim" style="width:100%">
+          <div class="w3-display-middle w3-display-hover">
+            <button style="cursor: pointer;" onclick="document.location = 'https://ww9.aitsafe.com/cf/add.cfm?product=Straight+Fitted+Jeans&price=20.50&userid=B8270502'">
+              Buy now  <em class="fa fa-shopping-cart"></em> 
+            </button>
+          </div>
+        </div>
+        <p>Straight Fitted Jeans<br><em>$20.50</em></p>
+      </div>
+    </div>
+
+    <div class="w3-col l3 s6">
+      <div class="w3-container">
+        <div class="w3-display-container">
+          <img src="./images/person-in-black-denim-jeans-and-white-sneakers-3908081.jpg" alt="denim-black" style="width:100%">
+          <div class="w3-display-middle w3-display-hover">
+            <button style="cursor: pointer;" onclick="document.location = 'https://ww9.aitsafe.com/cf/add.cfm?product=Washed+Ripped+Jeans&price=20.50&userid=B8270502'">
+              Buy now  <em class="fa fa-shopping-cart"></em> 
+            </button>
+          </div>
+        </div>
+        <p>Washed Ripped Jeans<br><em>$20.50</em></p>
+      </div>
+      <div class="w3-container">
+        <div class="w3-display-container">
+          <img src="./images/man-sitting-on-ledge-1306248.jpg" alt="man-sit" style="width:100%">
+          <span class="w3-tag w3-display-topleft">Sale</span>
+          <div class="w3-display-middle w3-display-hover">
+            <button style="cursor: pointer;" onclick="document.location = 'https://ww9.aitsafe.com/cf/add.cfm?product=Classic+Skinny+Jeans&price=14.99&userid=B8270502'">
+              Buy now  <em class="fa fa-shopping-cart"></em> 
+            </button>
+          </div>
+        </div>
+        <p>Classic Skinny Jeans<br><em class="w3-text-red">$14.99</em></p>
+      </div>
+    </div>
+
+    <div class="w3-col l3 s6">
+      <div class="w3-container">
+        <div class="w3-display-container">
+          <img src="./images/two-people-wearing-rugged-jeans-1365363.jpg" alt="rugged-jean" style="width:100%">
+          <div class="w3-display-middle w3-display-hover">
+            <button style="cursor: pointer;" onclick="document.location = 'https://ww9.aitsafe.com/cf/add.cfm?product=Vintage+Skinny+Jeans&price=14.99&userid=B8270502'">
+              Buy now  <em` class="fa fa-shopping-cart"></em> 
+            </button>
+          </div>
+        </div>
+        <p>Vintage Skinny Jeans<br><em>$14.99</em></p>
+      </div>
+      <div class="w3-container">
+        <div class="w3-display-container">
+          <img src="./images/photo-of-person-wearing-tattered-jeans-3751376.jpg" alt="tattered-jean" style="width:100%">
+          <span class="w3-tag w3-display-topleft">Sale</span>
+          <div class="w3-display-middle w3-display-hover">
+            <button style="cursor: pointer;" onclick="document.location = 'https://ww9.aitsafe.com/cf/add.cfm?product=Moddish+Ripped+Jeans&price=14.99&userid=B8270502'">
+              Buy now  <em class="fa fa-shopping-cart"></em> 
+            </button>
+          </div>
+        </div>
+        <p>Modish Ripped Jeans<br><em class="w3-text-red">$14.99</em></p>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Subscribe section -->
+  <div class="w3-container w3-black w3-padding-32">
+    <h2>Subscribe</h2>
+    <p>To get special offers and VIP treatment:</p>
+    <p>
+      <label for="email">Please input you E-mail address </label>
+      <input class="w3-input w3-border" type="email" id="email" name="email" placeholder="Enter e-mail" style="width:100%" />
+    </p>
+    <button type="button" class="w3-button w3-red w3-margin-bottom">Subscribe</button>
+  </div>
+  
+ <!-- Footer -->
+ <footer class="w3-row-padding w3-padding-32">
+  <div class="w3-third">
+    <h3>FOOTER</h3>
+    <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+    <p>Created by Logtadds </p>
+    <br>
+    <ul class="nav">
+      <li><a href="privacy-policy.html">Privacy Policy</a></li>
+      <li><a href="cookie-policy.html">Cookie Policy</a></li>
+      <li><a href="training.html">Tutorial Training</a></li>
+    </ul>
+  </div>
+
+  <div class="w3-third">
+    <h3>BLOG POSTS</h3>
+    <ul class="w3-ul w3-hoverable">
+      <li class="w3-padding-16">
+     <a class="w3-bar-item w3-button" href="blog.html">
+      <img alt="#" src="./images/photo-of-group-of-men-wearing-assorted-scarves-holding-667200.jpg" class="w3-left w3-margin-right" style="width:50px">
+      <span class="w3-large">Lorem</span><br>
+      <span>Sed mattis nunc</span>
+    </a>
+      </li>
+      <li class="w3-padding-16">
+    <a class="w3-bar-item w3-button" href="blog.html">
+      <img alt="#" src="./images/person-wearing-white-tank-top-inside-his-store-974252.jpg" class="w3-left w3-margin-right" style="width:50px">
+      <span class="w3-large">Ipsum</span><br>
+      <span>Praes tinci sed</span>
+    </a>
+      </li> 
+    </ul>
+  </div>
+
+  <div class="w3-third w3-serif">
+    <h3>POPULAR TAGS</h3>
+    <p>
+      <span class="w3-tag w3-black w3-margin-bottom">Travel</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">New York</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Education</span>
+      <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">China</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">France</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Refuge</span>
+      <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Ideas</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Africa</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">America</span>
+      <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Tech</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Covid-19</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Europe</span>
+      <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Politics</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">People</span>
+    </p>
+  </div>
+</footer>
+
+  <!-- End page content -->
+</div>
+
+<script>
+// Accordion 
+function myAccFunc() {
+  var x = document.getElementById("demoAcc");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else {
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+// Click on the "Jeans" link on page load to open the accordion for demo purposes
+document.getElementById("myBtn").click();
+
+
+// Open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+</script>
+
+</body>
+</html>
