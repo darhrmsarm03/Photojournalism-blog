@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Logtadds PhotoJournal</title>
+<meta charset="UTF-8">
+<meta name="description" content="Photography & Portraits">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
+<link rel="stylesheet" href="./assets/css/project.css">
+
+<body>
+
+  <!-- Sidebar (hidden by default) -->
+  <nav class="w3-sidebar w3-bar-block w3-card w3-top w3-xlarge w3-animate-left"
+    style="display:none;z-index:2;width:40%;min-width:300px" id="mySidebar">
+    <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button">Close Menu</a>
+    <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button">Home</a>
+    <a href="portfolio.html" onclick="w3_close()" class="w3-bar-item w3-button">Portfolio</a>
+    <a href="contact.html" onclick="w3_close()" class="w3-bar-item w3-button">Contact</a>
+    <a href="blog.html" onclick="w3_close()" class="w3-bar-item w3-button">Blog</a>
+    <a href="products.html" onclick="w3_close()" class="w3-bar-item w3-button">Shopping</a>
+  </nav>
+
+  <!-- Top menu -->
+  <div class="w3-top">
+    <div class="w3-white w3-xlarge" style="max-width:1200px;margin:auto">
+      <div class="w3-button w3-padding-16 w3-left" onclick="w3_open()">☰</div>
+      <div class="w3-right w3-padding-16"><a href="/index.html"><img class="logo11" alt="#" src="./images/logo11.jpeg">
+        </a>
+      </div>
+      <div class="w3-center w3-padding-16">Latest Potrait</div>
+    </div>
+  </div>
+
+  <!-- !PAGE CONTENT! -->
+  <div class="w3-main w3-content w3-padding" style="max-width:1200px;margin-top:100px">
+
+    <!-- First Photo Grid-->
+    <p>
+    <div class="w3-row-padding w3-padding-16 w3-center" id="food">
+      <div class="w3-quarter">
+        <img src="./images/man-sitting-reading-a-book-1667843.jpg" alt="#" style="width:100%">
+        <p>A life-long goal served as career guidance</p>
+      </div>
+      <div class="w3-quarter">
+        <img src="./images/advertisements-batch-blur-business-518543.jpg" alt="#" style="width:100%">
+        <p>Business advertisement</p>
+      </div>
+      <div class="w3-quarter">
+        <img src="./images/man-wearing-black-crew-neck-t-shirt-playing-music-3321688.jpg" alt="Cherries"
+          style="width:100%">
+        <p>Time off from work led to creative freedom</p>
+      </div>
+
+      <div class="w3-quarter">
+        <img src="./images/person-walking-through-an-alley-in-the-middle-of-white-1683518.jpg" alt="Pasta and Wine"
+          style="width:100%">
+        <p>CodeofLiving </p>
+      </div>
+    </div>
+    <!-- Second Photo Grid-->
+    <div class="w3-row-padding w3-padding-16 w3-center">
+      <div class="w3-quarter">
+        <img src="./images/a-man-reading-a-news-paper-3669735.jpg" alt="#" style="width:100%">
+        <p>Awareness comes from being top of mind</p>
+
+      </div>
+      <div class="w3-quarter">
+        <img src="./images/photo-of-man-holding-a-drone-camera-1563324.jpg" alt="Salmon" style="width:100%">
+        <p>A routine task became a source of enjoyment </p>
+
+      </div>
+      <div class="w3-quarter">
+        <img src="./images/camels-at-the-site-of-pyramids-2445852.jpg" alt="#" style="width:100%">
+        <p>Desert tourism is blooming like deserts in spring, with ever more destinations</p>
+
+      </div>
+      <div class="w3-quarter">
+        <img src="./images/arrows-in-a-white-paper-3671146.jpg" alt="#" style="width:100%">
+        <p>Le French</p>
+
+      </div>
+    </div>
+
+    <p>
+      <a href="blog-single.html" class="w3-button w3-padding-large w3-white w3-border"><strong>VIEW MORE »
+        </strong></a>
+    </p>
+
+    <hr id="about">
+
+    <section>
+      <!-- About Section -->
+      <div class="w3-container w3-padding-32 w3-center">
+        <h3>About Us </h3><br>
+        <img src="./images/sand-desert-yellow-orange-90407.jpg" alt="Me" class="w3-image"
+          style="display:block;margin:auto" width="800" height="533">
+        <div class="w3-padding-32">
+          <p> Who We Are!</p>
+          <p>With Passion For Real Photo Stories</p>
+          <p>we make our passion our life’s work or pursue multiple interests in life, sometimes unexpected
+            passions
+            surprise us out of the blue and give us a new sense of purpose. </p>
+        </div>
+      </div>
+    </section>
+
+
+    <section>
+      <!-- Table Section -->
+      <div class="w3-container w3-padding-32 w3-center">
+        <h3>Favorite Movie </h3>
+        <div class="w3-padding-32">
+          <table id="table">
+            <tr>
+              <th>Favorite Photographer</th>
+              <th>Richarf Avedon</th>
+            </tr>
+            <tr>
+              <td id="hd">Photographer Location</td>
+              <td>New York</td>
+            </tr>
+            <tr>
+              <td id="dh">Photographer Features</td>
+              <td>
+                <ul>
+                  <li>Christian Dior : 1982</li>
+                  <li>In The American West : 1985</li>
+                  <li>Corcoran Gallery of Art : 2009 </li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <td id="hda">Photographer Interest</td>
+              <td>Fashion & Art</td>
+            </tr>
+            <tr>
+              <td id="hde">Awards</td>
+              <td>
+                <ul>
+                  <li>2017: International Photography Hall of Fam</li>
+                  <li>2003: The Royal Photographic Society's Special 150th Anniversary Medal and Honorary
+                    Fellowship
+                  </li>
+                  <li>2003: National Arts Award for Lifetime Achievement</li>
+                  <li>2003: Royal Photographic Society 150th Anniversary Meda</li>
+                  <li>2001: Fellow of the American Academy of Arts and Sciences</li>
+                  <li>1994: Prix Nadar in for his book Evidence </li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <td id="hdf">Legacy</td>
+              <td>The Richard Avedon Foundation is a private operating foundation,
+                structured by Avedon during his lifetime. It began its work shortly
+                after his death in 2004. Based in New York, the foundation is the
+                repository for Avedon's photographs, negatives, publications, papers,
+                and archival materials. <a href="https://en.wikipedia.org/wiki/Richard_Avedon#Legacy">read
+                  more</a>
+              </td>
+            </tr>
+            <tr>
+              <td id="hdr">Top Photographs</td>
+              <td>
+                <ul>
+                  <li>Whitney Houston (cover of Whitney), 1987</li>
+                  <li>Muddy Waters, cover of Hard Again, 1977</li>
+                  <li>Pile of beautiful people, Versace campaign, 1982</li>
+                  <li>Asha Puthli, (She Loves to Hear the Music Album back cover), 1974</li>
+                  <li>Dwight David Eisenhower, President of the United States, 1964</li>
+                  <li>Jacqueline de Ribes, 1961</li>
+                </ul>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <hr>
+
+    <!-- Footer -->
+    <footer class="w3-row-padding w3-padding-32">
+      <div class="w3-third">
+        <h3>FOOTER</h3>
+        <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies
+          congue
+          gravida diam non fringilla.</p>
+        <p>Created by Logtadds </p>
+        <br>
+        <ul class="nav">
+          <li><a href="privacy-policy.html">Privacy Policy</a></li>
+          <li><a href="cookie-policy.html">Cookie Policy</a></li>
+          <li><a href="training.html">Tutorial Training</a></li>
+        </ul>
+      </div>
+
+      <div class="w3-third">
+        <h3>BLOG POSTS</h3>
+        <ul class="w3-ul w3-hoverable">
+          <li class="w3-padding-16">
+            <a class="w3-bar-item w3-button" href="blog.html">
+              <img alt="#" src="./images/photo-of-group-of-men-wearing-assorted-scarves-holding-667200.jpg"
+                class="w3-left w3-margin-right" style="width:50px">
+              <span class="w3-large">Lorem</span><br>
+              <span>Sed mattis nunc</span>
+            </a>
+          </li>
+          <li class="w3-padding-16">
+            <a class="w3-bar-item w3-button" href="blog.html">
+              <img alt="#" src="./images/person-wearing-white-tank-top-inside-his-store-974252.jpg"
+                class="w3-left w3-margin-right" style="width:50px">
+              <span class="w3-large">Ipsum</span><br>
+              <span>Praes tinci sed</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="w3-third w3-serif">
+        <h3>POPULAR TAGS</h3>
+        <p>
+          <span class="w3-tag w3-black w3-margin-bottom">Travel</span> <span
+            class="w3-tag w3-dark-grey w3-small w3-margin-bottom">New York</span> <span
+            class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Education</span>
+          <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">China</span> <span
+            class="w3-tag w3-dark-grey w3-small w3-margin-bottom">France</span> <span
+            class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Refuge</span>
+          <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Ideas</span> <span
+            class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Africa</span> <span
+            class="w3-tag w3-dark-grey w3-small w3-margin-bottom">America</span>
+          <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Tech</span> <span
+            class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Covid-19</span> <span
+            class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Europe</span>
+          <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Politics</span> <span
+            class="w3-tag w3-dark-grey w3-small w3-margin-bottom">People</span>
+        </p>
+      </div>
+    </footer>
+
+    <!-- End page content -->
+  </div>
+
+  <script>
+    // Script to open and close sidebar
+    function w3_open() {
+      document.getElementById("mySidebar").style.display = "block";
+    }
+
+    function w3_close() {
+      document.getElementById("mySidebar").style.display = "none";
+    }
+  </script>
+
+</body>
+
+</html>
