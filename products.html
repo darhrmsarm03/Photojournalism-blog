@@ -17,7 +17,7 @@ style="z-index:2;width:150px" id="mySidebar">
     <em onclick="w3_close()" class="fa fa-remove w3-hide-large w3-button w3-display-topright"></em>
     <a href="/index.html"><img class="logo11" alt="#" src="./images/logo11.jpeg" style="font-size:2.5em"></a>
   </div>
-  
+
   <div class="w3-padding-64 w3-large w3-text-grey" style="font-weight:bold">
     <a onclick="myAccFunc()" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align" id="myBtn">
       Jeans <em class="fa fa-caret-down"></em>
@@ -29,11 +29,10 @@ style="z-index:2;width:150px" id="mySidebar">
 </nav>
 
 <!-- Top menu on small screens -->
-<div class="w3-sidebar w3-bar-block w3-card w3-top w3-large w3-animate-left"
-  style="display:none;z-index:4;width:20%;min-width:150px" id="mySidebar">
-  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button">Close Menu</a>
-  <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button">Home</a>
-</div>
+<header class="w3-bar w3-top w3-hide-large w3-black w3-xlarge">
+  <div class="w3-bar-item w3-padding-24 w3-wide"><img class="logo11" alt="#" src="./images/logo11.jpeg" style="font-size:1em"></div>
+  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding-24 w3-right" onclick="w3_open()"><em class="fa fa-bars"></em></a>
+</header>
 
 <!-- Overlay effect when opening sidebar on small screens -->
 <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
