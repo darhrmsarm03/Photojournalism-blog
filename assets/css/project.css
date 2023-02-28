@@ -76,7 +76,7 @@ table, th, td {
    width:40%;
    min-width:300px
 }
-
+* {box-sizing:border-box}
 
 /* Slideshow container */
 .slideshow-container {
