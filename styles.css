@@ -1,4 +1,4 @@
 
-rounded-image {
-  border-radius: 10%;
+img.rounded-image {
+  border-radius: 50%;
 }
