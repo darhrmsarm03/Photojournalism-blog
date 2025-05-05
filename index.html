@@ -1,18 +1,179 @@
+New logtadds
+
 <!DOCTYPE html>
 <html lang="en">
-<title>Logtadds PhotoJournal</title>
-<meta charset="UTF-8">
-<meta name="description" content="Photography & Portraits">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
-<link rel="stylesheet" href="./assets/css/project.css">
-<link rel="stylesheet" type="text/css" href="styles.css" />
+<head>
+  <title>Logtadds PhotoJournal</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Photography & Portraits">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
+  <link rel="stylesheet" href="./assets/css/project.css">
+  <link rel="stylesheet" type="text/css" href="styles.css" />
+  <style>
+    /* Custom responsive styles */
+    body {
+      font-family: "Karma", sans-serif;
+    }
 
-  <body>
+    .w3-main {
+      margin-top: 64px; /* Adjust based on your top menu height */
+    }
+
+    .logo11 {
+      max-width: 100px;
+      height: auto;
+    }
+
+    /* Adjust sidebar width for smaller screens */
+    @media (max-width: 600px) {
+      #mySidebar {
+        width: 60% !important; /* Make it wider on small screens */
+        min-width: unset !important; /* Remove min-width restriction */
+      }
+    }
+
+    /* Responsive table styles */
+    #table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+
+    #table th, #table td {
+      padding: 8px;
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+    }
+
+    #table th {
+      background-color: #f2f2f2;
+    }
+
+    /* Stack table rows on smaller screens */
+    @media (max-width: 600px) {
+      #table, #table tbody, #table tr, #table td, #table th {
+        display: block;
+      }
+
+      #table tr {
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+      }
+
+      #table td {
+        text-align: right;
+        padding-left: 50%;
+        position: relative;
+      }
+
+      #table td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 10px;
+        width: 45%;
+        padding-right: 10px;
+        white-space: nowrap;
+        font-weight: bold;
+      }
+
+      #table th {
+        display: none; /* Hide table headers on small screens */
+      }
+    }
+
+    /* Adjust font size for paragraphs on small screens */
+    @media (max-width: 600px) {
+      p {
+        font-size: 16px;
+      }
+      .w3-third p {
+          font-size: 14px; /* Slightly smaller font for image captions */
+      }
+    }
+
+    /* Slideshow styles (can be in styles.css) */
+    .slideshow-container {
+      max-width: 1000px;
+      position: relative;
+      margin: auto;
+    }
+
+    .mySlides {
+      display: none;
+    }
+
+    .prev, .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      margin-top: -22px;
+      padding: 16px;
+      color: white;
+      font-weight: bold;
+      font-size: 18px;
+      transition: 0.6s ease;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+    }
+
+    .next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+
+    .prev:hover, .next:hover {
+      background-color: rgba(0,0,0,0.8);
+    }
+
+    .numbertext {
+      color: #f2f2f2;
+      font-size: 12px;
+      padding: 8px 12px;
+      position: absolute;
+      top: 0;
+    }
+
+    .dot {
+      cursor: pointer;
+      height: 15px;
+      width: 15px;
+      margin: 0 2px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+    }
+
+    .active, .dot:hover {
+      background-color: #717171;
+    }
+
+    .fade {
+      animation-name: fade;
+      animation-duration: 1.5s;
+    }
+
+    @keyframes fade {
+      from {opacity: .4}
+      to {opacity: 1}
+    }
+
+    /* Footer adjustments for mobile */
+    @media (max-width: 600px) {
+        .w3-row-padding.w3-padding-32 > .w3-third {
+            margin-bottom: 24px; /* Add space between stacked footer columns */
+        }
+    }
+
+  </style>
+</head>
+<body>
+
   <!-- Sidebar (hidden by default) -->
-  
   <nav class="w3-sidebar w3-bar-block w3-card w3-top w3-large w3-animate-left"
-    style="display:none;z-index:3;width:20%;min-width:150px; border-radius:3px" id="mySidebar">
+    style="display:none;z-index:3; border-radius:3px" id="mySidebar">
     <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button">Close Menu</a>
     <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button">Home</a>
     <a href="portfolio.html" onclick="w3_close()" class="w3-bar-item w3-button">Portfolio</a>
@@ -37,106 +198,96 @@
   <div class="w3-main w3-content w3-padding" style="max-width:1200px;margin-top:100px">
 
     <!-- First Photo Grid-->
-    <p>
-    <div class="w3-row-padding">
+    <div class="w3-row-padding w3-padding-16 w3-center">
       <div class="w3-third w3-container w3-margin-bottom">
-        <img src="./images/man-sitting-reading-a-book-1667843.jpg" alt="#" style="width:100%; padding:auto;  border-radius:5px;" >
-        <p style="font-size: 18px"> A life-long goal served as career guidance</p>
+        <img src="./images/man-sitting-reading-a-book-1667843.jpg" alt="#" style="width:100%; border-radius:5px;" >
+        <p> A life-long goal served as career guidance</p>
       </div>
       <div class="w3-third w3-container w3-margin-bottom">
         <img src="./images/advertisements-batch-blur-business-518543.jpg" alt="#" style="width:100%;  border-radius:5px;">
-        <p style="font-size: 18px"> Business advertisement</p>
+        <p> Business advertisement</p>
       </div>
       <div class="w3-third w3-container w3-margin-bottom">
         <img src="./images/man-wearing-black-crew-neck-t-shirt-playing-music-3321688.jpg" alt="Cherries"
          style="width:100%; border-radius:5px;">
-        <p style="font-size: 18px">Time off from work led to creative freedom</p>
+        <p>Time off from work led to creative freedom</p>
       </div>
     </div>
-    
+
     <!-- Second Photo Grid-->
-    
-   <div class="w3-row-padding">
+    <div class="w3-row-padding w3-padding-16 w3-center">
       <div class="w3-third w3-container w3-margin-bottom">
         <img src="./images/a-man-reading-a-news-paper-3669735.jpg" alt="#" style="width:100%; border-radius:5px;">
-        <p style="font-size: 18px">Awareness comes from being top of mind</p>
-
+        <p>Awareness comes from being top of mind</p>
       </div>
       <div class="w3-third w3-container w3-margin-bottom">
         <img src="./images/photo-of-man-holding-a-drone-camera-1563324.jpg" alt="Salmon" style="width:100%; border-radius:5px;">
-        <p style="font-size: 18px">A routine task became a source of enjoyment </p>
-
+        <p>A routine task became a source of enjoyment </p>
       </div>
-   <div class="w3-third w3-container w3-margin-bottom">
+      <div class="w3-third w3-container w3-margin-bottom">
         <img src="./images/camels-at-the-site-of-pyramids-2445852.jpg" alt="#" style="width:100%; border-radius:5px;">
-        <p style="font-size: 18px">Desert tourism is blooming like deserts in spring, with ever more destinations</p
+        <p>Desert tourism is blooming like deserts in spring, with ever more destinations</p>
       </div>
     </div>
 
-     <!-- Third Photo Grid-->
-    
-   <div class="w3-row-padding">
-       <div class="w3-third w3-container w3-margin-bottom">
+    <!-- Third Photo Grid-->
+    <div class="w3-row-padding w3-padding-16 w3-center">
+      <div class="w3-third w3-container w3-margin-bottom">
         <img src="./images/person-walking-through-an-alley-in-the-middle-of-white-1683518.jpg" alt="Pasta and Wine"
           style="width:100%;  border-radius:5px;">
-        <p style="font-size: 18px">Code of Living </p>
+        <p>Code of Living </p>
       </div>
-    
-    <div class="w3-third w3-container w3-margin-bottom">
+      <div class="w3-third w3-container w3-margin-bottom">
         <img src="./images/arrows-in-a-white-paper-3671146.jpg" alt="#" style="width:100%; border-radius:5px;">
-        <p style="font-size: 18px">Le French</p>
+        <p>Le French</p>
       </div>
-       
-    <div class="w3-third w3-container w3-margin-bottom">
+      <div class="w3-third w3-container w3-margin-bottom">
         <img src="./images/Natureitself.jpg" alt="cool one over there please" style="width:100%; border-radius:5px;">
-          <p style="font-size: 18px">Nature Reserve</p>
-        </div>
+        <p>Nature Reserve</p>
+      </div>
     </div>
-    
-    <p>
+
+    <p class="w3-center">
       <a href="blog-single.html" class="w3-button w3-padding-large w3-white w3-border" style= "border-radius: 5px"><strong>VIEW MORE »
         </strong></a>
     </p>
-<!-- Slideshow container -->
-<div class="slideshow-container">
 
-  <!-- Full-width images with number and caption text -->
-  <div class="mySlides fade">
-    <div class="numbertext">1 / 4</div>
-    <img src="images/photo-of-man-using-roller-skates-3376660.jpg" style="width:100%; border-radius:3px;"">
-    
-  </div>
+    <!-- Slideshow container -->
+    <div class="slideshow-container">
+      <!-- Full-width images with number and caption text -->
+      <div class="mySlides fade">
+        <div class="numbertext">1 / 4</div>
+        <img src="images/photo-of-man-using-roller-skates-3376660.jpg" style="width:100%; border-radius:3px;">
+      </div>
 
-  <div class="mySlides fade">
-    <div class="numbertext">2 / 4</div>
-    <img src="images/2-lion-on-grass-field-during-daytime-41178.jpg" style="width:100%; border-radius:3px;"">
-    
-  </div>
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 4</div>
+        <img src="images/2-lion-on-grass-field-during-daytime-41178.jpg" style="width:100%; border-radius:3px;">
+      </div>
 
-  <div class="mySlides fade">
-    <div class="numbertext">3 / 4</div>
-    <img src="images/september11.jpg" style="width:100%; border-radius:3px;">
-   
-  </div>
-  <div class="mySlides fade">
-    <div class="numbertext">3 / 4</div>
-    <img src="images/two-people-standing-in-beach-3590733.jpg" style="width:100%; border-radius:3px;">
-    
-  </div>
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 4</div>
+        <img src="images/september11.jpg" style="width:100%; border-radius:3px;">
+      </div>
+      <div class="mySlides fade">
+        <div class="numbertext">4 / 4</div> <!-- Corrected number -->
+        <img src="images/two-people-standing-in-beach-3590733.jpg" style="width:100%; border-radius:3px;">
+      </div>
 
-  <!-- Next and previous buttons -->
-  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-  <a class="next" onclick="plusSlides(1)">&#10095;</a>
-</div>
-<br>
+      <!-- Next and previous buttons -->
+      <a class="prev" onclick="plusSlides(-1)">❮</a>
+      <a class="next" onclick="plusSlides(1)">❯</a>
+    </div>
+    <br>
 
-<!-- The dots/circles -->
-<div style="text-align:center">
-  <span class="dot" onclick="currentSlide(1)"></span>
-  <span class="dot" onclick="currentSlide(2)"></span>
-  <span class="dot" onclick="currentSlide(3)"></span>
-</div>
-    
+    <!-- The dots/circles -->
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+      <span class="dot" onclick="currentSlide(4)"></span> <!-- Added dot for the 4th slide -->
+    </div>
+
     <section>
       <!-- Table Section -->
       <div class="w3-container w3-padding-32 w3-center">
@@ -145,15 +296,15 @@
           <table id="table">
             <tr>
               <th>Favorite Photographer</th>
-              <th>Richarf Avedon</th>
+              <td data-label="Favorite Photographer">Richarf Avedon</td>
             </tr>
             <tr>
-              <td id="hd">Photographer Location</td>
-              <td>New York</td>
+              <td id="hd" data-label="Photographer Location">Photographer Location</td>
+              <td data-label="Photographer Location">New York</td>
             </tr>
             <tr>
-              <td id="dh">Photographer Features</td>
-              <td>
+              <td id="dh" data-label="Photographer Features">Photographer Features</td>
+              <td data-label="Photographer Features">
                 <ul>
                   <li>Christian Dior : 1982</li>
                   <li>In The American West : 1985</li>
@@ -162,12 +313,12 @@
               </td>
             </tr>
             <tr>
-              <td id="hda">Photographer Interest</td>
-              <td>Fashion & Art</td>
+              <td id="hda" data-label="Photographer Interest">Photographer Interest</td>
+              <td data-label="Photographer Interest">Fashion & Art</td>
             </tr>
             <tr>
-              <td id="hde">Awards</td>
-              <td>
+              <td id="hde" data-label="Awards">Awards</td>
+              <td data-label="Awards">
                 <ul>
                   <li>2017: International Photography Hall of Fam</li>
                   <li>2003: The Royal Photographic Society's Special 150th Anniversary Medal and Honorary
@@ -181,8 +332,8 @@
               </td>
             </tr>
             <tr>
-              <td id="hdf">Legacy</td>
-              <td>The Richard Avedon Foundation is a private operating foundation,
+              <td id="hdf" data-label="Legacy">Legacy</td>
+              <td data-label="Legacy">The Richard Avedon Foundation is a private operating foundation,
                 structured by Avedon during his lifetime. It began its work shortly
                 after his death in 2004. Based in New York, the foundation is the
                 repository for Avedon's photographs, negatives, publications, papers,
@@ -191,8 +342,8 @@
               </td>
             </tr>
             <tr>
-              <td id="hdr">Top Photographs</td>
-              <td>
+              <td id="hdr" data-label="Top Photographs">Top Photographs</td>
+              <td data-label="Top Photographs">
                 <ul>
                   <li>Whitney Houston (cover of Whitney), 1987</li>
                   <li>Muddy Waters, cover of Hard Again, 1977</li>
@@ -281,23 +432,52 @@
     function w3_close() {
       document.getElementById("mySidebar").style.display = "none";
     }
-    let slideIndex = 0;
-showSlides();
 
-function showSlides() {
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  slideIndex++;
-  if (slideIndex > slides.length) {slideIndex = 1}
-  slides[slideIndex-1].style.display = "block";
-  setTimeout(showSlides, 5000); // Change image every 5 seconds
-}
+    // Slideshow script
+    let slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) { slideIndex = 1 }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += " active";
+      setTimeout(showSlides, 5000); // Change image every 5 seconds
+    }
+
+    function plusSlides(n) {
+      showSlidesManual(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+      showSlidesManual(slideIndex = n);
+    }
+
+    function showSlidesManual(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+    }
   </script>
 
-
 </body>
-
 </html>
