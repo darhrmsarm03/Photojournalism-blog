@@ -16,9 +16,9 @@ I find social media a great way to see what other pages my clients find interest
 
 •	Website content: There are some key pieces of information that every photojournalist should have on their professional website. 
 1.	Location: Your location needs to be front and center on your first page. People want to make sure that they know what’s happening in a particular place 
-2.	Contact & About: the contact page needs to be easy to use, clear and functioning. The about page is a great chance to make a good first impression! People want to know who they are going to pay attention to. 
+2.	Contact & About: The contact page needs to be easy to use, clear, and functioning. The about page is a great chance to make a good first impression! People want to know who they are going to pay attention to. 
 3.	Photos:  a portfolio where your clients and viewers can see your work by constantly updating your portfolio keeps things fresh and means you’re always improving your site!
-4.	Blog: are a really great way that clients and viewer can get to know you. When people can relate, they are more likely to trust your content.
+4.	Blog: is a great way that clients and viewers can get to know you. When people can relate, they are more likely to trust your content.
 
 ### Contributing
 
