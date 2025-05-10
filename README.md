@@ -28,9 +28,9 @@ There are some key pieces of information that every photojournalist should have 
 3.	Photos:  a portfolio where your clients and viewers can see your work by constantly updating your portfolio keeps things fresh and means you’re always improving your site!
 4.	Blog: is a great way that clients and viewers can get to know you. When people can relate, they are more likely to trust your content.
 
-### Contributing
+### Contributions
 
-Contributions are welcome! Please adhere to the following guidelines:
+**Contributions are welcome! Please adhere to the following guidelines**:
 
 - Fork the repository: Create a copy of the project on your GitHub account.
 - Create a branch: Make your changes on a new branch.
