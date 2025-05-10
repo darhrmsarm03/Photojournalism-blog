@@ -6,9 +6,9 @@ The purpose of this type of website is to have a convenient method of presenting
 Gives the owner instant credibility, attracts the right clients and repels the wrong ones, the website helps the business climb to the top of search engine result, and gives the business an easy place to send potential clients.
 
 #### Goals of the website
-Generate more qualified leads to increase sales through the website’s marketing, increase awareness about services provided, improve lead conversion rate, improve customer satisfaction, optimize the flow of information by automating task. 
+Generate more qualified leads to increase sales through the website’s marketing, increase awareness about services provided, improve lead conversion rate, improve customer satisfaction, and optimize the flow of information by automating tasks. 
 
-#### Features of the Website
+### Features of the Website
 simplicity, clear navigation, an effective contact page, blogging, implementing analytics, a clear and concise “About” page, bespoke design, speed, and reliable and good SEO.
 
 #### Target audience
