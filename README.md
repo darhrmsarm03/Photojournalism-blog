@@ -19,3 +19,13 @@ I find social media a great way to see what other pages my clients find interest
 2.	Contact & About: the contact page needs to be easy to use, clear and functioning. The about page is a great chance to make a good first impression! People want to know who they are going to pay attention to. 
 3.	Photos:  a portfolio where your clients and viewers can see your work by constantly updating your portfolio keeps things fresh and means you’re always improving your site!
 4.	Blog: are a really great way that clients and viewer can get to know you. When people can relate, they are more likely to trust your content.
+
+### Contributing
+
+Contributions are welcome! Please adhere to the following guidelines:
+
+- Fork the repository: Create a copy of the project on your GitHub account.
+- Create a branch: Make your changes on a new branch.
+- Commit your changes: Use clear and concise commit messages.
+- Push your changes: Push your branch to your forked repository.
+- Create a pull request: Submit a pull request to the main repository.
