@@ -21,7 +21,7 @@ I find social media a great way to see what other pages my clients find interest
 #### Photojournalism 
 The image that is recorded that the human eye can perceive. This branch of photography is where images are used to report a story. Photos are capable of telling the story with using a single or a few images. These are important whether it is watching a show, a news broadcast, or reading newspapers or magazines. They help give viewers or readers a better idea of what is happening. With the development of more affordable cameras, equipment, and the Internet, an increasing number of people are becoming photojournalists. People are becoming increasingly aware of their surroundings and capturing what they see.
 
-#### Website content
+### Website content
 There are some key pieces of information that every photojournalist should have on their professional website. 
 1.	Location: Your location needs to be front and center on your first page. People want to make sure that they know what’s happening in a particular place 
 2.	Contact & About: The contact page needs to be easy to use, clear, and functioning. The about page is a great chance to make a good first impression! People want to know who they are going to pay attention to. 
