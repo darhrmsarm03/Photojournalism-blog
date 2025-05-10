@@ -30,7 +30,7 @@ There are some key pieces of information that every photojournalist should have 
 
 ### Contributions
 
-**Contributions are welcome! Please adhere to the following guidelines**:
+Contributions are welcome! Please adhere to the following guidelines:
 
 - Fork the repository: Create a copy of the project on your GitHub account.
 - Create a branch: Make your changes on a new branch.
