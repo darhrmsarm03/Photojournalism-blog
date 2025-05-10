@@ -2,7 +2,7 @@
 
 •	The purpose of this type of website is to have a convenient method of presenting your portfolio to the defined target market through consistent content.
 •	Reasons for the website: gives the owner instant credibility, attracts the right clients and repel the wrong ones, the websites helps the business climb to the top of search engine result and gives the business an easy place to send potential clients.
-•	Goals of the website: generate more qualified leads to increase sales through website’s marketing, increase awareness about services provided, improve lead conversion rate, improve customer satisfaction, optimize the flow of information by automating task. 
+•	Goals of the website: generate more qualified leads to increase sales through the website’s marketing, increase awareness about services provided, improve lead conversion rate, improve customer satisfaction, optimize the flow of information by automating task. 
 •	Features of the Website: simplicity, clear navigation, an effective contact page, blogging, implementing analytic, clear and concise “About” page, bespoke design, speed and reliable and good SEO.
 
 • Target audience: the target is the ideal clients. 
